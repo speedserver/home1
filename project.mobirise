@@ -1,0 +1,807 @@
+{
+  "settings": {
+    "name": "Site-05-31_1714",
+    "currentPage": "page3.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#ffffff",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": "3.4",
+        "display2Font": "Rubik",
+        "display2Size": "1.4",
+        "display5Font": "Rubik",
+        "display5Size": "1.4",
+        "display7Font": "Rubik",
+        "display7Size": "1.4",
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "siteFonts": [
+      {
+        "css": "'Fjalla One', sans-serif",
+        "name": "Fjalla One",
+        "url": "https://fonts.googleapis.com/css?family=Fjalla+One:400"
+      }
+    ],
+    "versionFirst": "4.7.6",
+    "uniqCompNum": 40,
+    "versionPublish": "4.7.6",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "header6",
+          "_customHTML": "<section class=\"header6\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#555555\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=BqThobByE0k\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">스피드 서버에 오신것을 환영합니다</h1>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">입장하기</a></div>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qTBZC4AhwT",
+          "_anchor": "header6-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "Page 1",
+        "order": 3
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676",
+              "font-weight": "300"
+            },
+            ".mbr-content-text": {
+              "color": "#767676"
+            },
+            ".panel-item": {
+              "background": "#ffffff"
+            },
+            ".card": {
+              "word-wrap": "break-word"
+            },
+            ".mbr-iconfont": {
+              "font-size": "80px",
+              "color": "#149dcc"
+            }
+          },
+          "_name": "counters1",
+          "_customHTML": "<section class=\"counters1 counters\" group=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\n        <input type=\"checkbox\" title=\"Show Block Title\" name=\"showTitles\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n\n        <select title=\"Cards Count\" name=\"cardsAmount\">\n           <option value=\"1\">1</option>\n           <option value=\"2\" selected>2</option>\n           <option value=\"3\">3</option>\n           <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#b2ccd2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">스피드서버 다운로드센터<br><br></h2>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">접속이 안될경우 당황하지 마시고 고객님의<br> 오류메시지에 맞게 다운로드 설치후 접속하시면 됩니다.<br><br><br><br></h3>\n\n        <div class=\"container pt-4 mt-2\">\n            <div class=\"media-container-row\">\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <a href=\"https://goonter13.weebly.com/uploads/9/1/6/7/91678370/msvcp__32bit_.zip\"><span mbr-icon class=\"mbr-iconfont mbri-download\"></span></a>\n                        </div>\n\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\">32</h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">msvcp140.dll(32비트)<br></h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">&nbsp;msvcp140.dll 파일을 \n<br>설치하라고 메세지가 뜬 경우<br><br>&nbsp;다운받은 압축 파일의\n<br>압축을 풀고 나온 3개 파일\n<br>msvcp110.dll  msvcp120.dll  msvcp140.dll\n<br>파일을  아래 경로에 넣어줍니다.\n<br>     \n<br>&nbsp;c드라이브 &gt; windows &gt; system32 폴더에  넣어줍니다.<br><br></p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>1\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <a href=\"https://goonter13.weebly.com/uploads/9/1/6/7/91678370/msvcp__64bit_.zip\"><span mbr-icon class=\"mbr-iconfont mbri-download\"></span></a>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\">64</h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">\n                                msvcp140.dll(64비트)                           </h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">msvcp140.dll 파일을 \n<br>설치하라고 메세지가 뜬 경우<br>&nbsp;<br>&nbsp;다운받은 압축 파일의\n<br>압축을 풀고 나온 3개 파일\n<br>msvcp110.dll  msvcp120.dll  msvcp140.dll\n<br>파일을  아래 경로에 넣어줍니다.\n<br><br>&nbsp;c드라이브 &gt; windows &gt; sysWOW64 폴더에  넣어줍니다.<br></p>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>2\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbr-iconfont mbri-download\"></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                                  300\n                            </h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">\n                                Bootstrap\n                            </h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n                                    One of Bootstrap's big point is responsiveness and obirise male effective use of this by genereating highly responsive website for you.\n                            </p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>3\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-hot-cup mbr-iconfont\"></span>\n                        </div>\n\n                        <div class=\"card-texts\">\n                             <h3 class=\"count pt-3 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                                  400\n                            </h3>\n                            <h4 class=\"mbr-content-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">\n                                Web fonts\n                            </h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">\n                                    Google has a highly exhaustive list of fonts compiled into its web font platform and Mobirise make it easy for you to use them on your website easily and freely\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n   </div>\n</section>",
+          "_cid": "qTC3YtjrEi",
+          "_anchor": "counters1-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            },
+            "h4": {
+              "text-align": "center"
+            },
+            "p": {
+              "text-align": "center"
+            },
+            ".card-img span": {
+              "font-size": "96px",
+              "color": "#149dcc"
+            }
+          },
+          "_name": "features1",
+          "_customHTML": "<section class=\"features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\"> \n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/03.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <a href=\"https://www.microsoft.com/ko-kr/download/details.aspx?id=48145\"><span mbr-icon class=\"mbr-iconfont mbri-download\"></span></a>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Visual Studio 2015\n<div>설치실패 또는 오류</div></h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">다운받은 vc_redist.x32(64).exe \n<br>파일을 마우스 우클릭 &gt; 속성에 들어갑니다 \n<br>​호환 모드를 windows server2003 \n<br>서비스팩 으로 선택\n<br>그리고 관리자 권한으로 이 프로그램 실행 체크 후 적용 후 vc_redist.x32(64).exe 을 다시 실행시켜 설치하면 완료됩니다.</p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <a href=\"https://www.microsoft.com/ko-kr/download/details.aspx?id=48145\"><span mbr-icon class=\"mbr-iconfont mbri-download\"></span></a>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Appcheck.exe 오류</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">해당 오류는 주로 새로 설치한PC<br>또는 노트북에서 발생합니다&nbsp;<br>&nbsp;링크에서Visual Studio 2015용 Visual C++ 재배포 가능 패키지를<br>32.64비트에 맞게 설치하시면 합니다.</p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <a href=\"https://goonter13.weebly.com/uploads/9/1/6/7/91678370/net_frame_work.zip\"><span mbr-icon class=\"mbr-iconfont mbri-download\"></span></a>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">.NET Framework 초기화 오류</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        해당 오류는 Microsoft .NET Framework 버전 설치를 통해 해결할 수 있습니다.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img pb-3\">\n                    <a href=\"https://www.microsoft.com/ko-kr/download/details.aspx?id=48145\"><span mbr-icon class=\"mbr-iconfont mbri-download\"></span></a>\n                </div>\n                <div class=\"card-box\">\n                    <h4 class=\"card-title py-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Visual Studio 2015<br>설치실패 또는 오류</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">다운받은 vc_redist.x32(64).exe\n<br>파일을 마우스 우클릭 &gt; 속성에 들어갑니다&nbsp;<br>​호환 모드를 windows server2003\n<br>서비스팩 으로 선택<br>그리고 관리자 권한으로 이 프로그램\n실행 체크 후 적용&nbsp;후  vc_redist.x32(64).exe 을 다시 실행시켜 설치하면 완료됩니다.</p>\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n</section>",
+          "_cid": "qTCatXHRAw",
+          "_anchor": "features1-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "meta_descr": "Website Builder Description",
+        "title": "Page 2",
+        "order": 2
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"10\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#149dcc\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text><b>※ 스피드 서버 홍보 이벤트\n</b><div>\n</div><div>- 자세히 읽어보시고 누구나 참여가능하니.\n</div><div>어려워마시고 많은 참여바랍니다^^\n</div><div>5분만 투자하시면 됩니다. 어렵지 않습니다.\n</div><div>\n</div><div>홍보는 날짜 제한 없이 언제든지 가능합니다\n</div><div>홍보 보상 확인 방법은 카카오톡 ID: 쿠우서버 친추후, (홈페이지 - 카카오톡 친추 참고)\n</div><div>양식에 맞게 홍보확인 할 수 있는 증거자료 보내주시면 됩니다.\n</div><div>날짜보이는 스샷이나 홍보하신곳 주소링크 적어서 받으실 캐릭명 같이적어주세요\n</div><div>확인만 할 수 있으면 됩니다. 반대로 ★확인 안되면 지급 안되니 주의★ 하시기 바랍니다.\n</div><div>\n</div><div>홍보로 하루손쉽게 사냥없이 손쉽게 아데나 받을수있습니다.\n</div><div>그리고 홍보보상은 오픈일수에 따라 보상이 증가합니다. 항상 확인바랍니다.\n</div><div>\n</div><div>─────────────────────────────────────────────────────\n</div><div>\n</div><div>1. 네이버 &amp; 다음 &amp; 구글 블로그 게시글 홍보\n</div><div>\n</div><div>네이버 / 다음블로그 홍보는 게시물 작성후. 5~10분뒤에 한번 작성해주세요. ^^*\n</div><div>구글 블로그 홍보는 무한 도배를 하셔도 계정정지가 절때 없습니다. (해외 사이트라서!)\n</div><div>자세한건 아래내용 참고바랍니다.\n</div><div>\n</div><div>EX) 구글블로그 홍보시 : http://ttghdqh.blogspot.com\n</div><div>다음블로그 홍보시 : http:/qmffhrm5.blogspot.kr/\n</div><div>네이버블로그 홍보시 : http:/qmffhrm5.blogspot.kr/\n</div><div>\n</div><div>(블로그 홍보시 주의할 점) 위에 예시 링크 참고하세요!\n</div><div>\n</div><div>- 1. 제목은 모두 다르게 작성하셔야 됩니다. (따라 하시면 안됩니다!)\n</div><div>리니지 관련 예) 리니지 쿠우서버 직장인 걱정 NO! 반하자 지향~\n</div><div>리니지!! 쿠우서버 완전 꿀재미!!\n</div><div>2. 게시글 작성할때 밑에 네이버 검색 허용 체크 꼭! 해주셔야 됩니다. \n</div><div>3. 게시글 작성할때 밑에 댓글 허용 X 댓글 비허용으로 체크 꼭!\n</div><div>4. 게시글 작성할때 밑에 태그 무조건 필수 입니다.\n</div><div>태그달기 : #리니지 #쿠우서버 #리니지본썹 리니지관련으로\n</div><div>태그 3개는 최소 필수로 넣어주셔야 됩니다.\n</div><div>\n</div><div>※ 네이버 &amp; 다음 블로그는 계정 1개당 7일마다 1번만 홍보 됩니다\n</div><div>즉 한번 홍보했던 네이버&amp;다음 계정으로 7일에 한번만 블로그 참여가능!\n</div><div>\n</div><div>다른 계정로 홍보 하실경우 다음 날 또 참여가능\n</div><div>1인당 1번 밖에 참여가 되지 않는 이유는 반복적인 게시글 작성시\n</div><div>아이디 정지 및 네이버 검색에 홍보 노출이 안됩니다.\n</div><div>\n</div><div>게시글 4개 ★ 구글 블로그 보상\n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>게시글 2개 ★ 다음 블로그 보상\n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>게시글 2개 ★ 네이버 블로그 보상\n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>────────────────────────────────────────────────────\n</div><div>\n</div><div>2. 네이버 지식인 질문하기 홍보 ★질문 1개★\n</div><div>\n</div><div>지식인 홍보는 제일 간편하고 쉽습니다. 3개 질문 등록. 3분당 1개! 5분정도만 투자하시면\n</div><div>되며 제일 쉬운 홍보방식입니다. = 네이터 지식인 질문 2개 등록 (리니지 카테고리)\n</div><div>지식인홍보 예시, 참고하셔서 이런씩으로 질문주제에 맞게 질문: 지식인 질문 예시링크 클릭\n</div><div>\n</div><div>지식인 홍보는 1. 리니지 지식인 질문 하러가기 링크 클릭\n</div><div>상세한 사진 및 방법 : http://qoosdfw33.blogspot.kr\n</div><div>\n</div><div>여기로 이동해서 리니지1 관련으로 질문하기 해서. 양식대로 질문해주시면 됩니다.(센스껏)\n</div><div>자기의 질문글에 답변이 달리면!, 꼭 채택해주세요 질문글 사라집니다 \n</div><div>\n</div><div>지식인은 너무 빨리 질문하기를 반복하면 제제 당할 수 있습니다. (5분 간격 3개 등록)Ex)제목은 리니지 쿠우서버 접속 어떻게하나요? / 리니지 쿠우서버가 어디죠? /\n</div><div>요즘 잘나가는 프리썹 추천좀 해주세요. 이런씩으로 해주시면 됩니다 \n</div><div>내용은 : 쿠우서버 주소가 유튜브에서 쿠우서버 치니까 나오더던데 이렇게 접속하는거\n</div><div>맞나요? \n</div><div>이런씩으로 간접적으로 홍보해주시면 신고가 안당합니다^^\n</div><div>이미 쿠우서버 홍보 답변&amp;댓글 되어있으면 반복적으로 하지말아주세요^^\n</div><div>\n</div><div>지식인 질문 1개 ★ 홍보보상\n</div><div>= [아데나 500만 + 깃털 860개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>────────────────────────────────────────────────\n</div><div>\n</div><div>2. 네이버 지식인 답변하기 홍보 ★답변 2개★\n</div><div>\n</div><div>지식인 홍보는 제일 간편하고 쉽습니다. 3개 답변 등록. 3분당 1개! 10분 정도만 투자하시면\n</div><div>되며 제일 쉬운 홍보방식입니다. = 네이터 지식인 답변 3개 등록\n</div><div>(리니지 카테고리에서 꼭 하세요!)\n</div><div>지식인홍보 예시, 참고하셔서 이런씩으로 질문주제에 맞게 질문: 지식인 답변 예시링크 클릭\n</div><div>\n</div><div>지식인 홍보는 1. 리니지 지식인 답변 하러가기 링크 클릭\n</div><div>\n</div><div>여기로 이동해서 리니지1 관련 지식인 질문글에. 센스있게 답변바랍니다\n</div><div>내용은 : 요즘 잘나가는 쿠우서버 주소가 유튜브에서 쿠우서버 치니까\n</div><div>나오더던데 이렇게 접속하는거 맞나요?\n</div><div>이런씩으로 간접적으로 홍보해주시면 신고가 안당합니다^^\n</div><div>이미 쿠우서버 홍보 답변&amp;댓글 되어있으면 반복적으로 하지말아주세요^^\n</div><div>\n</div><div>지식인 답변 2개 ★ 홍보보상 \n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>────────────────────────────────────────────────\n</div><div>\n</div><div>2. 네이버 지식인 댓글 홍보 ★댓글 2개★\n</div><div>\n</div><div>지식인 홍보는 제일 간편하고 쉽습니다. 질문글에다가 쿠우서버 댓글만 적으면 됩니다.\n</div><div>혹은 답변이 가능한 지식인 질문이 있으면 답변을 하셔도 됩니다^^\n</div><div>\n</div><div>아래는 지식인 댓글달기 홍보 주소 목록입니다. 원하는곳 찾아서 댓글홍보 해주세요!\n</div><div>리니지 4대서버 지식인 질문글 링크 (&lt;- 클릭시 이동 됨)\n</div><div>리니지 서버추천 지식인 질문글 링크 (&lt;- 클릭시 이동 됨) \n</div><div>리니지 OO서버 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 OO서버 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 OO서버 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 OO서버 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 반하자 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 서버추천 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 반놀자 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>리니지 팩 지식인 질문글 링크(&lt;- 클릭시 이동 됨)\n</div><div>\n</div><div>위에 링크중 원하시는곳으로 이동하셔서.\n</div><div>질문이 올라와있는 지식인 의견에 댓글을 달아주시면 됩니다\n</div><div>댓글 예시) 요즘 반하자는 쿠우서버가 대형라던데요? \n</div><div>유튜브에서 \"쿠우서버\" 검색하니까 나오더라구요 ~!\n</div><div>\n</div><div>※ 2개 댓글 달아주시고 카카오톡으로 댓글 달아주신,주소or 폰 카메라로 사진 찍으신후보내주시면 됩니다.\n</div><div>이미 쿠우서버 홍보 답변&amp;댓글 되어있으면 반복적으로 하지말아주세요^^\n</div><div>\n</div><div>지식인 의견 댓글 2개 ★ 홍보보상 \n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>────────────────────────────────────────────────\n</div><div>\n</div><div>3. 네이버 포스트 댓글 홍보 ★댓글 2개★ ★가장 쉬움 추천★\n</div><div>\n</div><div>네이버 포스트 댓글 홍보방법 입니다. 네이버 로그인만 되어 있으면 바로 참여가능!\n</div><div>이미 쿠우서버 홍보 댓글이 있는 포스트글은 피해주시고 다른 포스트에 댓글 홍보 해주세요! 1. 네이버 리니지 포스트 링크 (&lt;- 클릭시 이동 됨)\n</div><div>2. 네이버 리니지 게임조선 링크 (&lt;- 클릭시 이동 됨)\n</div><div>\n</div><div>위에 링크중 2개 중 원하시는곳으로 이동하셔서.\n</div><div>질문이 올라와있는 기사 댓글의견에 댓글을 달아주시면 됩니다.\n</div><div>이미 홍보되어있는 곳은 홍보 삼가바랍니다. 지급안됨.\n</div><div>댓글 예시) 요즘 반하자는 리니지1은 쿠우서버 갑이 라던데요? \n</div><div>유튜브에서 \"쿠우서버\" 검색하니까 나오더라구요 ~!\n</div><div>2개 댓글 달아주시고 카카오톡으로 사진을 보내주세요 (폰 카메라로 모니터 찍어서).\n</div><div>\n</div><div>※이미 홍보가 되어있는 포스트 기사 댓글에 똑같은곳에 홍보 X 중복시 지급불가.\n</div><div>리니지 포스트 댓글 2개 ★ 홍보보상 \n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>────────────────────────────────────────────────\n</div><div>\n</div><div>4. 아이템매니아 홍보 (판매등록 2개)\n</div><div>\n</div><div>아이템매니아 홍보는 매우 간단합니다.\n</div><div>\n</div><div>1. 아이템 매니아 로그인 한다\n</div><div>2. 판매금액 3만, 단위 억, 99999 이렇게 올려야 상위권에 노출됩니다.\n</div><div>3. 판매등록으로 리니지 - PK테스트 혹은 기타에 쿠/우 신규모집 렙제72 이런씩 (홍보목적)\n</div><div>3. 내용은 유튜브에서 쿠/우서버 검색!! (/빼고 검색!)\n</div><div>자세한 사항은 밑에 상세한 사진 및 방 법을 참고바랍니다.\n</div><div>게시글 등록 2개만하면 홍보보상 지급 됩니다 \n</div><div>\n</div><div>아이템 매니아 주소 : http://trade.itemmania.com\n</div><div>\n</div><div>상세한 사진 및 방법 : https://ttaosldk.blogspot.com\n</div><div>\n</div><div>게시글을 양식대로 2개만 등록해주시면 됩니다.\n</div><div>다음날 홍보할경우 재등록이 아닌 판매등록 새로 2개 올려주셔야됩니다^^\n</div><div>사진으로 마이룸 자신이 등록한 판매글을 보여주셔야 되며.\n</div><div>확인이 안될경우 홍보보상 지급이 불가능합니다 (재등록 악용건 문제로)\n</div><div>기존 글을 절때 지우시면 안됩니다!!\n</div><div>매니아 판매등록 2개 ★ 홍보보상 \n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>─────────────────────────────────────────────────────\n</div><div>\n</div><div>5. 리니지 (인벤 &amp; 조선 &amp; 게임메카) ★댓글 5개★\n</div><div>\n</div><div>원하시는곳 한곳 골라서 홍보후 링크주세요!^^\n</div><div>리니지 인벤 : http://www.inven.co.kr/webzine/news/?site=lineage\n</div><div>리니지 조선: http://lineage.gamechosun.co.kr/board/list.php?bid=report\n</div><div>리니지 뉴스: https://heraonline.net:44055/index.php?mid=LinReporterNews\n</div><div>\n</div><div>(게임조선 : 리포트뉴스 / 팁과정보 같은 조회수 많은곳에 해주세요.\n</div><div>이미 홍보댓글이 적혀있을겨경우, 다른곳에 해주세요~ ^_^ 무효로 간주합니다)\n</div><div>\n</div><div>댓글제목 EX) 리니지1 프리서버는. 쿠우서버 반하자 대형서버. 주소창에 : www.쿠우3.zz.am\n</div><div>\n</div><div>댓글 5개 ★ 홍보보상 \n</div><div>= [아데나 500만 + 깃털 600개 + 금빛깃털 600개 + 엘릭서 3개]\n</div><div>\n</div><div>────────────────────────────────────────────────────\n</div><div>\n</div><div>6. 아프리카방송 홍보 ★6시간 방송★\n</div><div>\n</div><div>아프리카홍보는 아프리카방송 켜시고 쿠우서버 홍보해주시면됩니다.\n</div><div>아프리카 주소: http://www.afreeca.com\n</div><div>방송시작 하고 카카오톡으로 메세지 주시면 됩니다. (시작시간 , 방송제목)\n</div><div>방송 종료시 종료전에 메세지 주시면 확인해드립니다 방송시간. (종료시간 , 방송제목)\n</div><div>\n</div><div>ex) 제목: [생]리니지 생방송 서큐버스 72기사 열사냥\n</div><div>위에 제목 따라하지 마세요! (본서버에서 방송하는것처럼 하셔야 정지안당해요^^)\n</div><div>-보상 : 방송시작후. 4시간 기준으로 보상 지급.\n</div><div>-시청자가 서버주소를 물어보면: 유튜브에서 쿠우서버 검색하면 된다고 답변하면됩니다.\n</div><div>단 시청자수 5명이상. 홍보효과가 있을경우만. 방에 들어가서 확인합니다.\n</div><div>악용적으로 방송만 켜신분들이 계셔서이니 양해바랍니다^^\n</div><div>시청자들이 유입될수있게 방송제목.방송환경 신경써주세요!\n</div><div>-사람이 4~5명 들어오셨을때 캡쳐해서 제대로 방송중 인거 남겨주셔도 됩니다^^\n</div><div>그리고! 방송종료전 방송시간.제목.시청자 수, 확인전 보상지급 불가!\n</div><div>\n</div><div>4시간 ★ 홍보보상 \n</div><div>= [아데나 1000만 + 깃털 1200개 + 금빛깃털 1200개 + 엘릭서 6개] ★\n</div><div>\n</div><div>─────────────────────────────────────────────────────\n</div><div>\n</div><div>홍보후에 어떻게 증명하나요?\n</div><div>카카오톡 ID : 쿠우서버 검색!\n</div><div>\n</div><div>쿠우서버 카카오톡 친구추가 방법 &lt;- 클릭하시면 쿠우서버 카카오톡 친구추가 방법 상세 설명.\n</div><div>\n</div><div>[홍보후에 인증방법]\n</div><div>\n</div><div>블로그: 블로그 홍보는 자신이 홍보하신 블로그의 주소 혹은 사진을\n</div><div>카카오톡으로 보내주세요\n</div><div>\n</div><div>지식인 : 자신의 홍보한 지식인 답변은 3개, 질문은 2개 하신곳 주소 혹은 사진을 \n</div><div>카카오톡 으로 말씀주세요\n</div><div>\n</div><div>매니아 : 홍보하신곳 자신의 마이룸에서 판매등록한 물품이 보이게 캡쳐해서 사진을 주세요\n</div><div>\n</div><div>리니지 조선 : 댓글홍보 인증, 홍보한 곳 주소 5개 혹은 사진 주세요.\n</div><div>\n</div><div>아프리카 방송 : 방송시작전 종료전에 카카오톡으로 방송제목을 말씀주시면, 방송시간 체크해서 보상을 지급합니다\n</div><div>\n</div><div>기타사이트 인증 : 홍보한 주소, 혹은 사진 주세요 \n</div><div>\n</div><div>악용하여. 허위 홍보사실 적발시 지급되었던 내역 모두 회수 조치됩니다.\n</div><div>보상받고 글 삭제를 고의적으로 할 경우 벤 조치 및영구추방 처리됩니다.\n</div><div>\n</div><div>─────────────────────────────────────────────────────\n</div><div>\n</div><div>★현재 오픈일수에 대한 하루 최대 홍보제한★\n</div><div>원하는곳 2번 (하루에 최대 두(곳)만 홍보가능)\n</div><div>\n</div><div>★다중아이디 접속기록 IP조회후★\n</div><div>= 다중 홍보보상 지급&amp;악용 자동벤되니 주의.\n</div><div><br></div></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_cid": "qTSwIcYfW6",
+          "_anchor": "content9-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "meta_descr": "Web Page Builder Description",
+        "title": "Page 3",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#232323",
+              "font-weight": "300"
+            },
+            ".number-wrap": {
+              "color": "@labelsColor",
+              "border-color": "rgba(255, 255, 255, 0.15)",
+              "position": "relative",
+              "display": "inline-block",
+              "text-align": "center",
+              "padding": "5px 10px 13px 10px",
+              "margin": "0",
+              "min-width": "118px",
+              "border-radius": "2px",
+              "max-width": "100%"
+            },
+            ".number": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "font-size": "55px",
+              "text-transform": "none",
+              "letter-spacing": "-2px",
+              "word-spacing": "0",
+              "line-height": "1.3",
+              "color": "@numbersColor"
+            },
+            ".period": {
+              "display": "block",
+              "padding-top": "2px",
+              "border-top": "1px solid rgba(0, 0, 0, 0.1)"
+            },
+            ".dot": {
+              "position": "absolute",
+              "top": "-10px",
+              "right": "-1em",
+              "width": "1em",
+              "display": "block",
+              "height": "83%",
+              "overflow": "hidden",
+              "font-style": "normal",
+              "font-weight": "700",
+              "font-size": "55px",
+              "line-height": "89.65px",
+              "text-transform": "none",
+              "letter-spacing": "0",
+              "word-spacing": "0",
+              "color": "@numbersColor"
+            },
+            ".countdown-cont": {
+              "max-width": "700px",
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".dot": {
+                "display": "none"
+              }
+            },
+            "@media (max-width: 543px)": {
+              ".number-wrap": {
+                "margin-bottom": "15px"
+              }
+            },
+            "@media (max-width: 550px)": {
+              ".col-xs-3": {
+                "padding-left": "0",
+                "padding-right": "0"
+              },
+              ".number-wrap": {
+                "min-width": "auto"
+              }
+            },
+            "@media (max-width: 440px)": {
+              ".number, .dot": {
+                "font-size": "40px"
+              }
+            },
+            "@media (max-width: 380px)": {
+              ".period": {
+                "font-size": "0.8rem"
+              }
+            },
+            "H2": {
+              "text-align": "center"
+            }
+          },
+          "_name": "countdown1",
+          "_customHTML": "<section class=\"countdown1\" group=\"Countdowns\" plugins=\"countdown\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"text\" title=\"Countdown\" name=\"countdown\" value=\"2018/06/13\">\n        <input type=\"text\" inline title=\"Days\" name=\"daysCountdown\" value=\"Days\">\n        <input type=\"text\" inline title=\"Hours\" name=\"hoursCountdown\" value=\"Hours\">\n        <input type=\"text\" inline title=\"Minutes\" name=\"minutesCountdown\" value=\"Minutes\">\n        <input type=\"text\" inline title=\"Seconds\" name=\"secondsCountdown\" value=\"Seconds\">\n        <input type=\"color\" title=\"Numbers Color\" name=\"numbersColor\" value=\"#28262b\">\n        <input type=\"color\" title=\"Labels Color\" name=\"labelsColor\" value=\"#565656\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=53MqC2OhMJg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container \">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Speed Server Countdown\n        </b></h2>\n        <h3 class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">보다 나은 서비스로 여러분께 찾아가기 위해 준비중입니다.\n        </h3>\n        \n    </div>\n    <div class=\"container countdown-cont align-center\">\n        <div title=\"{{daysCountdown}}\" class=\"daysCountdown\"></div>\n        <div title=\"{{hoursCountdown}}\" class=\"hoursCountdown\"></div> \n        <div title=\"{{minutesCountdown}}\" class=\"minutesCountdown\"></div> \n        <div title=\"{{secondsCountdown}}\" class=\"secondsCountdown\"></div>\n        <div class=\"countdown pt-5 mt-2\" data-due-date=\"{{countdown}}\"> \n        </div>\n    </div>\n</section>",
+          "_cid": "qTTbrgsGoE",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "countdown1-w"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center",
+              "font-weight": "300"
+            },
+            ".wrap": {
+              "width": "150px",
+              "height": "150px",
+              "margin": "0 auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#232323"
+            },
+            ".card": {
+              "-webkit-flex-basis": "100%",
+              "flex-basis": "100%",
+              "word-wrap": "break-word"
+            },
+            "ellipse": {
+              "stroke": "rgba(206, 206, 206, 0.4)"
+            },
+            "path": {
+              "stroke": "@progressColor"
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".card": {
+                "-webkit-flex-basis": "33%",
+                "flex-basis": "33%"
+              }
+            },
+            ".mbr-section-subtitle DIV": {
+              "color": "#232323"
+            }
+          },
+          "_name": "progress-bars3",
+          "_customHTML": "<section class=\"progress-bars3\" group=\"Progress\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"as-pie-progress\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n       \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"color\" title=\"Progress Color\" name=\"progressColor\" value=\"#149dcc\">\n\n        <select title=\"Progress count\" name=\"progressCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"range\" inline title=\"Progress 1\" name=\"progress1\" min=\"0\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Progress 2\" name=\"progress2\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>1\">\n        <input type=\"range\" inline title=\"Progress 3\" name=\"progress3\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>2\">\n        <input type=\"range\" inline title=\"Progress 4\" name=\"progress4\" min=\"0\" max=\"100\" step=\"1\" value=\"80\" condition=\"progressCount>3\">\n        <input type=\"range\" inline title=\"Progress 5\" name=\"progress5\" min=\"0\" max=\"100\" step=\"1\" value=\"90\" condition=\"progressCount>4\">\n        <input type=\"range\" inline title=\"Progress 6\" name=\"progress6\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"progressCount>5\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/%EC%9A%95%EB%A7%9D%EC%9D%98-%EB%8F%99%EA%B5%B42-1000x778.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#e4d295\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">신뢰를 바탕으로</h2>\n\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">앞서가는 스피드 서버는 늘 여러분과 함께 성장합니다</h3>\n    \n        <div class=\"media-container-row pt-5 mt-2\">\n            <div class=\"card p-3 align-center\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress1\" role=\"progressbar\" data-goal=\"{{progress1}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">50%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">정직</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>1\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress2\" role=\"progressbar\" data-goal=\"{{progress2}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">신속</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>2\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress3\" role=\"progressbar\" data-goal=\"{{progress3}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\">100%</p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        정확</h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>3\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress4\" role=\"progressbar\" data-goal=\"{{progress4}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Safety\n                    </h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>4\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress5\" role=\"progressbar\" data-goal=\"{{progress5}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Study\n                    </h4>\n                </div>                 \n            </div>\n\n            <div class=\"card p-3 align-center\" mbr-if=\"progressCount>5\">\n                <div class=\"wrap\">\n                    <div class=\"pie_progress progress6\" role=\"progressbar\" data-goal=\"{{progress6}}\">\n                        <p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"></p>\n                    </div>\n                </div> \n                <div class=\"mbr-crt-title pt-3\">\n                    <h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        Gifts\n                    </h4>\n                </div>                 \n            </div>\n        </div>\n</div></section>",
+          "_cid": "qTT2kurywp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "progress-bars3-s"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".content-slider": {
+              "display": "flex",
+              "justify-content": "center"
+            },
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "flex"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              },
+              ".content-slider-wrap": {
+                "width": "100%!important"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-overlay": {
+              "z-index": "1"
+            },
+            ".container-slide.container": {
+              "width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".active.carousel-item-right, .carousel-item-next": {
+              "-webkit-transform": "translate3d(100%, 0, 0)",
+              "transform": "translate3d(100%, 0, 0)"
+            },
+            ".active.carousel-item-left, .carousel-item-prev": {
+              "-webkit-transform": "translate3d(-100%, 0, 0)",
+              "transform": "translate3d(-100%, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "50px",
+                "height": "50px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "1.5rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "15px",
+                  "height": "15px",
+                  "max-height": "15px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            },
+            ".mbr-slider.slide .container": {
+              "overflow": "hidden",
+              "padding": "0"
+            },
+            ".carousel-inner": {
+              "height": "100%"
+            },
+            ".slider-fullscreen-image": {
+              "height": "100%",
+              "background": "transparent !important"
+            },
+            ".image_wrapper": {
+              "height": "(@sliderHSize * 1px)",
+              "width": "100%",
+              "position": "relative",
+              "display": "inline-block"
+            },
+            ".image_wrapper img": {
+              "width": "auto !important",
+              "height": "100%"
+            },
+            ".carousel-item .container-slide": {
+              "text-align": "center"
+            },
+            ".content-slider-wrap": {
+              "width": "(@sliderWSize * 1%)"
+            },
+            "P": {
+              "color": "#232323",
+              "text-align": "center"
+            },
+            "H2": {
+              "color": "#232323"
+            },
+            "DIV": {
+              "text-align": "center"
+            }
+          },
+          "_name": "slider2",
+          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <!-- <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked> -->\n        <input type=\"hidden\" name=\"typeSlider\" value=\"headerSlider\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Width\" name=\"sliderWSize\" min=\"50\" max=\"100\" step=\"1\" value=\"100\" inline>\n        <input type=\"range\" title=\"Height\" name=\"sliderHSize\" min=\"300\" max=\"700\" step=\"10\" value=\"700\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"container content-slider\">\n        <div class=\"content-slider-wrap\">\n            <div mbr-carousel=\"slides\"></div> \n        </div>\n    </div>\n</section>",
+          "_cid": "qTTmR7rh0d",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": true,
+            "slides__autoplayInterval": "3000",
+            "slides__showBullets": true,
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/unnamed-1-2000x1125.jpg",
+                "active": true,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-7",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "2018.6월 6일 스타트후 스피드서버는 2주일간의\r<div>&nbsp;베타테스트서버를 기점으로\r</div><div>출발후 반하자 반놀자조합으로 서버를\r</div><div>&nbsp;매차2달반이상 진행을 목표로 삼고 있는 서버입니다.\r</div><div>\r</div><div>모든유저분들께서 보다 쉽게 플레이할수 있는 스피드서버!!\r</div><div><span style=\"font-size: 1.4rem; background-color: transparent;\">각종이벤트 풍성한게임 개발에 앞장서겠습니다!!&nbsp;</span><br></div><div><span style=\"font-size: 1.4rem; background-color: transparent;\">서버를 위해 열정적인 모습으로 운영을 약속드리겠습니다!!&nbsp;</span><br></div><div>유저분들의 사냥에 재미를 더하기위한 시스템!!\r</div><div>유저분들과의 약속을 항상 최우선으로 생각하며\r</div><div>&nbsp;최선을 다하는 운영을 약속하는 스피드서버!!\r</div><div>지루하지 않으며 열심히만 하시면 하시는 만큼\r</div><div>&nbsp;성장할수 있는서버 이며 장기간의\r</div><div>&nbsp;운영으로 보답하겠습니다!!\r</div><div>측근/비리/용케릭 절대없습니다!!\r</div><div>여성유저/직장인/학생/해외거주자분들이 서로\r</div><div>&nbsp;커뮤니케이션할수 있는 장을 만들도록 하겠습니다!!\r</div><div><br></div>",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>",
+                "overlayColor": "#ffffff"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/unnamed-2000x1125.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-2",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "백번말보단 행동으로 보여 드리겠습니다\r<div>다년간의 서버운영 노하우로 열심히 하는\r</div><div>&nbsp;스피드서버 운영진이 되겠습니다\r</div><div>\r</div><div>저희서버는 최신팩기반으로 운영을 하며\r</div><div>&nbsp;운영진은 24시간 대기중입니다\r</div><div>\r</div><div>서버내의 편지 또는 카카오톡문의는 5분내에\r</div><div>&nbsp;답변 및 처리해 드리겠습니다\r</div><div>\r</div><div>끝없는 홍보와 탄탄한 고정가족분들을 모시고 있으며\r</div><div>&nbsp;저희 스피드서버와 함께 재미있고\r</div><div>&nbsp;소중한 추억 만드시길 바랍니다.</div>",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>",
+                "overlayColor": "#ffffff"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/unnamed-2000x1125.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-2",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "게임시작전 유의사항 안내\r<div>\r</div><div>타서버를 이용하셨다면 반드시 백신,포멧 등을 권장드립니다.\r</div><div>타서버와 계정및 암호등을 절대로 동일하게 설정하지\r</div><div>&nbsp;마시길 바랍니다.\r</div><div>\r</div><div>접속오류시\r</div><div>\r</div><div>1. v3,알약등 백신프로그램을 종료후 접속을 시도 하세요\r</div><div>\r</div><div>&nbsp; 2. 게임 로딩창에서 튕길시 접속기에서\r</div><div>\r<span style=\"font-size: 1.4rem; background-color: transparent;\">'실행파일복구' 혹은 패치파일을&nbsp;</span></div><div>\r<span style=\"font-size: 1.4rem; background-color: transparent;\">&nbsp;다시 다운로드 하기길 바랍니다.&nbsp;</span></div><div>\r</div><div>3.위와 같은 오류들이 아니시라면 리니지를\r</div><div>\r<span style=\"font-size: 1.4rem; background-color: transparent;\">재설치이후 접속기까지 재설치 하시면 접속이 됩니다.&nbsp;</span></div><div>\r</div><div>4.접속기에 패치파일 받으시고\r</div><div>\r<span style=\"font-size: 1.4rem; background-color: transparent;\">&nbsp;접속하시면 접속이 됩니다.</span></div>",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>",
+                "overlayColor": "#ffffff"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/unnamed-2000x1125.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-2",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "블로그 접속시\r<div>&nbsp;'이사이트는 안전하지 않다고 보고된 사이트입니다'\r</div><div>\r</div><div>인터넷창 상단에 --&gt; SMARTSCREEN 필터 --&gt; SMARTSCREEN 필터 끄기 하시면 됩니다.\r</div><div>\r</div><div>위와 같이 실행한후에도 접속이 안되실 경우는\r</div><div>&nbsp;블로그 상단 오른쪽 2번째 카카오톡 상담\r</div><div>&nbsp;아이디로 친추 하신후 상담하시면 최대한 빠르게\r</div><div>\r<span style=\"font-size: 1.4rem; background-color: transparent;\">게임진행을 하실수 있도록 도움을 드리겠습니다 감사합니다.&nbsp;</span></div>",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>",
+                "overlayColor": "#ffffff"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/unnamed-2000x1125.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-5",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "리니지 스피드서버는 현금거래를 절대 금지합니다.\r<div>\r</div><div>리니지의 저작권은 NCSOFT이며 언제든 NC SOFT에 요청이 있으면 </div><br><div>서버를 내리겠습니다.</div>",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>",
+                "overlayColor": "#ffffff"
+              }
+            ]
+          },
+          "_anchor": "slider2-11"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-black-outline\" href=\"https://www.bighard.co.kr/lnex.aspx?lkey=ef653378\">접속기 다운로드<br></a> \n                    <a class=\"btn btn-black-outline\" href=\"https://speedserver.github.io/main2/page1.html\">다운로드 센터</a> <a class=\"btn btn-black-outline\" href=\"https://speedserver.github.io/con/\">카카오톡 센터</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qTTx9oZQub",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-13"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(0deg, @color2, @bg-value)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-iconfont-social": {
+              "font-size": "32px",
+              "color": "@iconsColor"
+            },
+            ".social-list": {
+              "a:focus": {
+                "text-decoration": "none"
+              }
+            },
+            "H2": {
+              "text-align": "center"
+            }
+          },
+          "_name": "social-buttons2",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"SocialLikes\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        \n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ff3366\"> \n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"color\" title=\"color2\" name=\"color2\" condition=\"bg.type=='color'\" value=\"#ffffff\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#7cd1f6\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\">지금 스피드 서버와 친구가되세요!</h2>\n                <div class=\"social-list pl-0 mb-0\">\n                    \n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                    \n                    \n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" mbr-if=\"iconsCount > 1\"></span>\n                    \n                    <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social mbrib-paper-plane\" mbr-if=\"iconsCount > 2\"></span>\n                    </a>\n                    <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 mbr-iconfont mbr-iconfont-social socicon-telegram socicon\" mbr-if=\"iconsCount > 3\"></span>\n                    </a>\n                    <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\" mbr-if=\"iconsCount > 4\"></span>\n                    </a>\n                    <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                        <span mbr-icon class=\"px-2 socicon-behance socicon mbr-iconfont mbr-iconfont-social\" mbr-if=\"iconsCount > 5\"></span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qTTwjaIFh9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "social-buttons2-12"
+        }
+      ]
+    }
+  }
+}
